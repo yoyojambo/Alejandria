@@ -32,10 +32,6 @@ splitter = RecursiveCharacterTextSplitter(
 
 toked = splitter.transform_documents(content_list)
 
-print( toked )
-
-# exit()
-
 embedding_function = SentenceTransformerEmbeddings(model_name="all-MiniLM-L6-v2")
 db = Chroma.from_documents(toked, embedding_function, persist_directory="./memory")
 

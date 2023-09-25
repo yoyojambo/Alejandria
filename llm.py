@@ -75,6 +75,6 @@ while question != "q":
     print("-> fuentes:")
 
     for i in rdocs:
-        print( f"--> {i.metadata['source']} pagina {i.metadata['page']}"  )
+        print( f"--> {i.metadata['source']} pagina { i.metadata['page'] + 1 }"  )
 
     print("\n-------------------\n")
